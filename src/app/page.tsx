@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import  prisma  from "@/lib/prisma";
 import ProductCard from "@/components/ProductCard";
 import Image from "next/image";
 
@@ -35,6 +35,7 @@ export default async function Home() {
               width={500}
               height={300}
               className="object-contain w-full h-60"
+              priority
             />
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg">
@@ -44,6 +45,7 @@ export default async function Home() {
               width={500}
               height={300}
               className="object-contain w-full h-60"
+              priority
             />
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg">
@@ -53,6 +55,7 @@ export default async function Home() {
               width={500}
               height={300}
               className="object-contain w-full h-60"
+              priority
             />
           </div>
         </div>
